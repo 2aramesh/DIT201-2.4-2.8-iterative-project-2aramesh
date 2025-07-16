@@ -1,0 +1,448 @@
+/* main style for the body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1600px) {
+  .top-bg-wrapper {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-bg-wrapper {
+    min-height: 80vh;
+  }
+}
+
+.grid-container {
+  display: block;  
+  overflow: visible;   /* allows scrolling on the webpage */
+  width: 100%;
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1000;   /* stays ontop of other content */
+  background-color: green; /* green with transparency */
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* styling for my navigation menu */
+.menu {
+  margin: 0;  
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.menu span {
+  padding: 20px 20px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+
+.menu input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.two-line-text {
+  margin: 0;  
+  display: inline-block;       /*  Allows width control and line breaks */
+  max-width: 100%;             /*  Limits width so text wraps */
+  white-space: normal;         /*  Allows wrapping */
+  text-align: left;         
+  line-height: 1.2;           
+  word-break: break-word;      
+  font-weight: bold;         
+}
+
+/* background image styling */
+.top-bg-wrapper1 {
+  background-image: url('../images/placeholder1.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;           /* adjusts with screen size */
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.top-bg-wrapper2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;        /* adjusts with screen size */
+  height: 100%;
+  width: 100%;
+}
+
+.top-bg-wrapper3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;            /* adjusts with screen size */
+  height: 100%;
+  width: 100%;
+}
+
+.top-bg-wrapper4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  min-height: 70vh;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.top-bg-wrapper4 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #38b000;
+  text-align: center;
+}
+
+.top-bg-wrapper4 p {
+  font-size: 1.2rem;
+  max-width: 100%;
+  line-height: 1.6;
+  color: #ae2d68;
+  text-align: center;
+}
+
+ 
+.top-bg-wrapper5 {
+  background-image: url('../images/blue_box.jpg');   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;     /* centers horizontally */
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.top-bg-wrapper5 h1 {
+  margin-top: 0;  
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #38b000;
+  text-align: center;
+}
+
+.top-bg-wrapper5 p {
+  font-size: 3rem;
+  max-width: 800px;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+} 
+
+.two-column-wrapper {
+  background-color: #f5f5f5;    /* light grey  */
+  border: 2px solid #ccc;       /* border around */
+  border-radius: 8px;           /* rounded corners */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /*  subtle shadow */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;           /* control width */
+}
+
+/* The box that's ontop of my  background image */
+.yellow-box {
+  background-color: #FFFACD;        /* Beige */
+  padding: 20px;                  /* Some spacing inside */
+  border-radius: 10px;            /* Rounded corners  */
+  color: blue;                   
+  width: mid-content;			/* Makes it the minimum possible for the content, basically hugging the content*/
+  margin: 350px auto 20px auto;               /* Center horizontally */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);  /* Adding a slight shadow */
+  text-align: center; 
+}
+
+.yellow-box p {
+  margin: 10px 0;                 /*  Spacing between lines */
+  font-weight: bold;             
+}
+
+.yellow-box .line1 {
+  font-size: 5rem;       /*  Largest font size */
+  font-weight: bold;
+  width: 900px;
+  margin-bottom: 10px;
+}
+
+.yellow-box .line2 {
+  font-size: 3rem;       /*  Medium font size*/
+  margin-bottom: 10px;
+}
+
+/* The box for my EOTC countdown */
+.yellow-box1 {
+  background-color: #ffff3f;        /* Yellow */
+  padding: 100px;                   /* spacing around the text */
+  border-radius: 20px;              /* Rounded corners  */
+  color: blue;                   
+  max-width: 400px;                 /*  control box width */
+  margin: 30px 0 10px 0;            /* Top, right, bottom, left */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);  /* add slight shadow */
+  text-align: left;                 
+  height: auto;
+}
+
+.yellow-box-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;                             /* spacing between the boxes */
+  max-width: 800px;
+  margin: 20px auto;
+}
+ 
+/* 4 Permission slip boxes */
+.yellow-box2 {
+  background-color: #ffff3f;
+  padding: 100px;
+  border-radius: 20px;
+  color: blue;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin: 0;                    
+}
+ 
+.two-column-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
+  height: 110%;   
+}
+
+.content-box {
+  background-image: url('../images/purplebg.jpg');
+  background-size: cover; 
+  background-color: #f5f5f5;    /* light grey background */
+  background-size: 200px 550px; /* width height */	
+  border-radius: 8px;           /* rounded corners */
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; 
+  margin: 0 auto;
+}
+
+/* The left side is area that has my purpose text */
+.left-side{
+  min-height: auto; /* let content decide */
+}
+
+/* The right side is area of my diamond image */
+.right-side {
+  position: relative;          /* needed for absolute positioning of text */
+  display: flex;
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  width: 100%;
+  background-color: blue;   
+  padding: 10px;             /* space between image and edges */
+ }
+
+.right-side img {
+  width: 80%;
+  height: 90%;
+}
+
+
+.right-side1 {
+  margin: 0 auto;	
+  position: centre;          /* needed for absolute positioning of text */
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  height: 100%;             /* ensure it has height to center within */
+  padding: 5px;             /* space between image and edges */
+  
+ }
+
+.right-side1 img {
+  max-width: 100%;
+  height: 140%;
+}
+.left-side h1 {
+  font-size: 2.5rem;
+  color: #38b000;
+}
+
+.left-side p {
+  font-size: 1.3rem;
+  color: #f35b04;
+  line-height: 1.4;
+}
+
+
+/* Diamond Image */
+.diamond-image {
+  margin-top: -20px; 	
+  width: 700px;
+  height: 900px;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: transform 0.3s;
+}
+
+.diamond-image:hover {
+  transform: scale(1.05);
+}
+
+/* Rectangle Image */
+.rectangle-image {
+  width: 600px;         /* narrower */
+  height: 900px;        /* taller */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;        /*    Rounded corners for rectangle */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);  /*   Shadow */
+  transition: transform 0.3s;
+}
+
+
+.rectangle-image:hover {
+  transform: scale(1.05);
+}
+
+.globe-icon {
+  width: 32px;   /* Set the width*/
+  height: 32px;  /* Set height, make sure the height and width are the same to ensure a perfect square */
+  object-fit: contain; /* Ensure the entire image fits */
+  cursor: pointer;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center exactly */
+  
+  color: black;               
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+  pointer-events: none;       /* clicks pass through text */
+  text-align: center;
+  width: 80%;                 /*  width for multiline */
+}
+
+.orange-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.orange-button:hover {
+  background-color: darkorange;
+}
+
+/* Footer */
+footer {
+  background-color: #ff006e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 0.8rem; 
+}
+
+.social {
+  flex: 1;
+  text-align: right;
+}
+
+ .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #ddd;
+  }
+  
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact {
+  flex: 1;
+  text-align: left;
+}
+
+
+
+
