@@ -7,160 +7,487 @@
       <meta name="Author" content="Archita Ramesh"/>
       <meta name="Description" content="EOTC Week Website"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Outdoor Activities Website</title>
+      <title></title>
       <!-- importing the web-page's style-sheet -->
+
       <link rel="stylesheet" href="css/style.css">
 	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 	</head>
-	<body>
-	<div class="top-bg-wrapper">
-		<div class="grid-container">
-			<div class="top-bg-wrapper1">
-				<header>
-				   <!--the code for my navigation menu starts here-->
-				   <nav class="menu">
-					  <span class="two-line-text">Logo Here</span>
-					  <span>      </span>
-					  <span>      </span>
-					  <span>      </span>
-					  <button>Button 1</button>
-					  <span>|</span>
-					  <button>Button 2</button>
-					  <span>|</span>
-					  <button>Button 3</button>
-					  <span>|</span>
-					  <button>Button 4</button>		
-					  <span>      </span>
-					  <span>      </span>
-					  <span>      </span>
+		<body>
+			<div class="top-bg-wrapperind1">
+			  <header>
+				<a href="index.html">
+				  <img src="images/commons/Design3.png" alt="Logo" class="logo-icon" />
+				</a>
+ 
+					<nav class="menu">
+						<a href="index.html" class="btn menu-item">
+						  <svg width="220" height="60">
+							<rect x="5" y="5" rx="25" ry="25" width="210" height="50" fill="#8080C0" stroke="url(#grad1)" />
+							<text x="50%" y="50%" dy=".35em" text-anchor="middle" font-size="16" fill="white">Home</text>
+						  </svg>
+						</a>				
+						<div class="menu-divider"></div>
+
+						<a href="page1.html"  class="btn">
+							<svg width="220" height="60">
+							  <rect x="5" y="5" rx="25" ry="25" width="210" height="50" fill="#8080C0" stroke="url(#grad1)" />
+							  <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-size="16" fill="white">Outdoor Activities</text>
+							</svg>
+						</a>
+						<div > </div>
+						<div class="menu-divider"></div>
+						<a href="page2.html"  class="btn">
+							<svg width="220" height="60">
+							  <rect x="5" y="5" rx="25" ry="25" width="210" height="50" fill="#8080C0" stroke="url(#grad1)" />
+							  <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-size="16" fill="white">Community Service</text>
+							</svg>
+						</a>	
+						<div > </div>
+						<div class="menu-divider"></div>						  
+						<a href="page3.html"  class="btn">
+							<svg width="220" height="60">
+							  <rect x="5" y="5" rx="25" ry="25" width="210" height="50" fill="#8080C0" stroke="url(#grad1)" />
+							  <text x="50%" y="50%" dy=".35em" text-anchor="middle" font-size="16" fill="white">Contact</text>
+							</svg>
+						</a>
+						<div > </div>
+						<div class="menu-divider"></div>
 		
-					  <form class="search-form" action="/search" method="get">
-						 <input
-							type="text"
-							name="q"
-							placeholder="Search…"
-							aria-label="Search"
-							/>
-						 <button type="submit">🔍</button>
-					  </form>
-					  <span>      </span>
-					  <img src="images/globe.jpg" alt="Globe" class="globe-icon" />
-					  <!--the code for my navigation menu ends here-->		 
-				   </nav>
+							 <!-- Gradient Definition -->
+						<svg width="0" height="0">
+							<defs>
+								<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+									<stop offset="0%" stop-color="#f6c973" />
+									<stop offset="100%" stop-color="#b40000" />
+								</linearGradient>
+							</defs>
+						</svg>	
+					  
+					   <!-- Search box with gradient + magnifier -->
+					<div class="search-container">
+					  <input type="text" id="searchInput" placeholder="Search..." />
+					  <svg id="searchBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path>
+					  </svg>
+					</div>		
+					  <img src="images/commons/globe.png" alt="Globe" class="globe-icon" id="globeIcon">
+					  
+					  <!-- Language dropdown -->
+					  <div class="lang-options" id="langOptions">
+						<div data-lang="en">English</div>
+						<div data-lang="es">Spanish</div>
+						 
+					  </div>
+					</nav>
 				</header>
+				
 				<!--transparent box overlapping background image-->
-				<div class="yellow-box">
-				  <p class="line2">Lorem Ipsum is simply...</p>
-				  <p class="line1">LOREM IPSUM IS SIM?</p>
-				  <p class="line2">Lorem Ipsum is simply dum</p>
+				<div class="lightblue-box">
+				  <p class="line2">You might be wondering...</p>
+				  <p class="line1">WHAT IS EOTC WEEK?</p>
+				  <p class="line2">Scroll Down To Find Out!</p>	  
+				</div>
+				<div class="scroll-arrow-wrapper">
+					<a href="#next-section">
+					  <img src="images/commons/scrolldownarrow.gif" alt="Scroll Down" class="scroll-arrow">
+					</a>
 				</div>
 			</div>   
-		</div>
-		<!--my main content starts here-->
-		<main>	
-			<div class="top-bg-wrapper2">
-				<div class="left-side">
-					<h1>Our Lorem Ipsum</h1>
-				</div>
-				<div class="content-box">
-					<div class="two-column-section">
-						<div class="left-side">
-								<p>  
-									                         <br>
-								  Lorem Ipsum is simply dum  <br>
-								  Lorem Ipsum is simply dummy text of the printing and <br>
-								  typesetting industry. Lorem Ipsum has been the <br>
-								  industry's standard dummy text ever since the 1500s, <br>
-								  when an unknown printer took a galley of type and <br>
-								  scrambled it to make a type specimen book. It has <br>
-								  survived not only five centuries, but also the leap into <br> 
-								  electronic typesetting, remaining essentially unchanged. <br>
-								  It was popularised in the 1960s with the <br>
-								  release of Letraset sheets containing.  
+ 
+			<!--my main content starts here-->
+			<main>	
+				<section id="next-section">
+					<div class="top-bg-wrapperind2">
+						<div class="left-sideind">
+							<h1>   Our Purpose   </h1>
+						</div>
+						<div class="two-column-sectionind">
+							<div class="bg-boxind"></div>  
+							<div class="left-sideind">
+									<p>  
+									  As part of the Year 10 programme students will be  
+									  participating in four days of Education Outside the  
+									  Classroom (EOTC). The focus of this programme is one of 
+									  citizenship and social awareness. The four days of activities  
+									  in which your child will participate are as follows: 
+									  Community Service, Rangituhi Walk, Adrenaline Forest/Te  
+									  Rauparaha Arena Aquatic Centre and Wainuiomata Camp. 
+									  Each student will be given a timetable informing them of  
+									  which trip they will do on which day. Click on the following 
+									  links to see your timetable for the week: </p>
+									<div class="groups">
+									  <a href="https://tawa-college-eotc.neocities.org/forms/Group%201.pdf" target="_blank">Group 1</a>
+									  <a href="https://tawa-college-eotc.neocities.org/forms/Group%202.pdf" target="_blank">Group 2</a>
+									  <a href="https://tawa-college-eotc.neocities.org/forms/Group%203.pdf" target="_blank">Group 3</a>
+									  <a href="https://tawa-college-eotc.neocities.org/forms/Group%204.pdf" target="_blank">Group 4</a>
+									</div>
+									
+							</div>
+							<div class="right-side1">
+								<div class="containerright">
+									<div class="circle_sq">Groups</div>
+									<div class="square top">
+									<a href="https://tawa-college-eotc.neocities.org/forms/Group%201.pdf" target="_blank">
+										<span>1</span>
+									</a>
+									</div>
+									<div class="square right">
+									<a href="https://tawa-college-eotc.neocities.org/forms/Group%204.pdf" target="_blank">
+										<span>4</span>
+									</a>
+									</div>
+									<div class="square bottom">
+									<a href="https://tawa-college-eotc.neocities.org/forms/Group%203.pdf" target="_blank">
+										<span>3</span>
+									</a>
+									</div>
+									<div class="square left">
+									<a href="https://tawa-college-eotc.neocities.org/forms/Group%202.pdf" target="_blank">
+										<span>2</span>
+									</a>
+									</div>
+								</div>						  
+							</div>
+						</div>
+					</div >
+				</section>
+				
+				<div class="top-bg-wrapperind3">
+					<div class="left-sideind_h3">
+						<h1>   Key Information   </h1>
+					</div>			
+						<div class="two-column-sectionind">
+							<div class="left-side2">
+								<p>
+								   These trips will run from Tuesday 2 December to
+								   Friday 5 December. All of these trips will depart
+								   from Tawa College at 8:35am and will return by
+								   3:20pm. The total cost of the trips is $75.00 per
+								   student. This includes transport and the cost of
+								   all activities. Due to the nature of the activities
+								   and the fixed costs involve, there will be no
+								   refunds given. Students are expected to bring a
+								   packed lunch on all of these days as they will not
+								   have any opportunities to purchase lunch.
 								</p>
-						</div>
-						<div class="right-side1">
-						  <img src="images/placeholder1.JPG" alt="Outdoor Activity" class="diamond-image">
-						</div>
+								<div class="circle-button-wrapperind"> 
+									<div class="circle-button">
+									  <div class="circle">&gt;&gt;</div>
+									  <button class="read-more">Read More</button>
+									</div>
+								</div>
+								<div class="hidden-text">
+								  <p> Students will be required to wear appropriate mufti clothing on all days. 
+								  This involves good walking/sports shoes, raincoat, sun block, and suitably warm clothing.
+								  Students will not be allowed to participate in these trips if they do not have the correct gear. 
+								  If you have any difficulty supplying these required items, please indicate on the return form 
+								  and we will endeavour to assist where possible. On all trips students will be expected to abide 
+								  by the school rules. This includes absolutely no cigarettes, drugs or alcohol. 
+								  Students will be expected to conduct themselves in a manner that is respectful to both the supervising 
+								  teachers and other students. Anyone who does not comply with these requirements will be sent 
+								  back to school and/or home at the expense of their parents/caregivers.
+								  It is essential that all students on the trip play their part in risk management. Their personal 
+								  safety is very much their responsibility, and they must always act in a manner that does not 
+								  endanger either themselves or others. It is important that they follow the instructions of 
+								  staff at all times.								  
+								  </p>
+								</div>								
+								
+								<div>  
+								<p> 	 </p>
+								 </div>
+									<div class="flip-wrapper">
+									  <!-- Yellow-Red box -->
+										
+										  <div class="side-box"></div> 
+										  <div class="flip-clock">
+											<h2 class="flip-header">EOTC WEEK</h2>
+											<div style="height:10px;"></div>
+										 
+											<h2 class="flip-detail">begins in... </h2>
+											 <div style="height:10px;"></div>
+
+											<div class="flip-row">
+											  <!-- Month -->
+											  <div class="digit-group">
+												<div class="digits">
+												  <div class="flip"><span id="month1">0</span><div class="divider"></div></div>
+												  
+												  <div class="flip"><span id="month2">1</span><div class="divider"></div></div>
+												  <div class="colon">:</div>
+												</div>
+												<div class="label">Months</div>
+											  </div>
+											  <!-- Day -->
+											  <div class="digit-group">
+												<div class="digits">
+												  <div class="flip"><span id="day1">0</span><div class="divider"></div></div>
+												  <div class="flip"><span id="day2">1</span><div class="divider"></div></div>
+												   <div class="colon">:</div>
+												</div>
+												<div class="label">Days</div>
+											  </div>
+											  <!-- Hour -->
+											  <div class="digit-group">
+												<div class="digits">
+												  <div class="flip"><span id="hour1">1</span><div class="divider"></div></div>
+												  <div class="flip"><span id="hour2">5</span><div class="divider"></div></div>
+												</div>
+												<div class="label">Hours</div>
+											  </div>
+											</div>
+										  </div>
+									</div>	  
+							</div>
+							 
+							<div class="right-sideind">
+								<div class="collage">
+								  <div class="photo" data-number="Attribution: Reuben Humphrey"><img src="images/index/photo1.jpg" alt="Photo 1"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo2.jpg" alt="Photo 2"></div>
+								  <div class="photo" data-number="Attribution: Gabriel Zeaph Garcia"><img src="images/index/photo3.jpg" alt="Photo 3"></div>
+								  <div class="photo" data-number="Attribution: Alisha Jeram"><img src="images/index/photo4.jpg" alt="Photo 4"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo5.jpg" alt="Photo 5"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo6.jpg" alt="Photo 6"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo7.jpg" alt="Photo 7"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo8.jpg" alt="Photo 8"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo9.jpg" alt="Photo 9"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo10.jpg" alt="Photo 10"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo11.jpg" alt="Photo 11"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo12.jpg" alt="Photo 12"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo13.jpg" alt="Photo 13"></div>
+								  <div class="photo" data-number="Attribution: Gabriel Zeaph Garcia"><img src="images/index/photo14.jpg" alt="Photo 14"></div>
+								  <div class="photo" data-number=""><img src="images/index/photo15.jpg" alt="Photo 15"></div>
+								</div>	 
+							</div>
+					 
+						</div>	 
+				</div>		
+						
+				<div class="top-bg-wrapperind4">
+					<img src="images/commons/border1.jpg" alt="" width="1520" height="40" class="top-border">				 
+					<div class="left-side_h4">
+						<h1>Permission Slips</h1>
 					</div>
-				</div>
-			</div >
-			<div class="top-bg-wrapper3">
-				<div class="two-column-section">
-				   <div class="left-side">
-					  <h1>Our Lorem Ipsum</h1>
-					  <p>
-						 Lorem Ipsum is simply dum Lorem Ipsum  is simply  <br>
-						 is simply dummy text of the printing and typesetting <br>
-						 industry. Lorem Ipsum has been the industry's standard <br>
-						 dummy text ever since the 1500s, when an unknown printer <br> 
-						 took a galley of type and scrambled it to make a type <br> 
-						 specimen book. It has survived not only five centuries, <br>
-						 but also the leap into electronic typesetting, remaining <br>
-						 essentially unchanged. It was popularised in the 1960s <br>
-						 with the release of Letraset sheets containing.  
-					  </p>
-					  <button class="orange-button">Read More</button>
-					  <div class="yellow-box1">
-					  </div>
-				   </div>
-				   <div class="right-side">
-					  <img src="images/placeholder1.JPG" alt="Lorem Ipsum" class="rectangle-image">
-					  <p class="centered-text">Collage</p>
-				   </div>
-				</div>
-			</div>	 
-			<div class="top-bg-wrapper4">
-				<div >
-					<h1>Our Lorem Ipsum</h1>
-					<p>
-						 Lorem Ipsum is simply dum lorem Ipsum is simply dummy text of the printing and 
-						 typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever  
-						 since the 1500s,when an unknown printer took a galley of type and scrambled it to make  
-						 a type specimen book. It has survived not only five centuries, but also the leap into  
-						 electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s  
-						 with the release of Letraset sheets containing.  
-					</p>
-					<div class="yellow-box-container">
-					  <div class="yellow-box2"></div>
-					  <div class="yellow-box2"></div>
-					  <div class="yellow-box2"></div>
-					  <div class="yellow-box2"></div>
-					</div>
-				 </div>	
-			</div>	
-			<div class="top-bg-wrapper5">
-					  <h1>Discover</h1>
-				<div>
-					  <p>  <br>
-					       <br>	
- 					    My discovery images go here 
-					  </p> 
+						<p>
+							All these activities are compulsory but have been designed to be both education and fun. Students
+							will be supervised at all times by Tawa College staff. If you have not already returned the permission
+							forms given out earlier this term then please collect another copy of the forms from the school office,
+							and hand them in to the student office along with $75.00 before Friday 24 October. If you have already
+							returned the permission forms then you only need to pay the $75.00 before Friday 24 October.
+						</p>
+ 					<div class="cross-wrapper">
+
+							  <div class="star-diamond"></div>
+							  <div class="stick top"></div>
+							  <div class="stick bottom"></div>
+							  <div class="stick left"></div>
+							  <div class="stick right"></div>
+
+							  <!--Left bottom  Box -->
+								  <div class="box top">
+									<div class="content-wrap">
+									  <h1>Swimming Consent</h1>
+									  <div class="button-row">
+										<div class="circle-button1">
+										  <div class="circle1">
+										  <a href="files/Swimming_Consent.pdf" target="_blank">
+											<img src="images/index/download.png" alt="Download" width="20" height="16">
+										  </a>	
+										  </div>
+											<a href="files/Swimming_Consent.pdf" target="_blank">
+											  <button class="read-more1">Download</button>
+											</a>		  
+										  
+										</div>
+										<div class="circle-button1">
+										  <div class="circle1">
+											<img src="images/index/copylink.png"   alt="Copy link 1" width="20" height="16" 
+											style="cursor:pointer;" 
+											data-link="https://docs.google.com/document/d/1SyF6V3ZXy0na9jtnsBKaYp5JO5sqB39aXS4yobxJy3Q/edit?tab=t.0"  
+											onclick="copyLink(this)">										
+										  </div>
+										  <button class="read-more1"   
+										  data-link="https://docs.google.com/document/d/1SyF6V3ZXy0na9jtnsBKaYp5JO5sqB39aXS4yobxJy3Q/edit?tab=t.0"
+										  onclick="copyLink(this)">Copy Link</button>	  
+										</div>
+									  </div>
+									</div>
+								  </div>
+							  <!--right  Bottom Box -->
+							  <div class="box bottom">
+									<div class="content-wrap">
+									  <h1>Student Contract</h1>
+									  <div class="button-row">
+										<div class="circle-button1">
+										  <div class="circle1">
+										  <a href="files/Student_Contract.pdf" target="_blank">
+											<img src="images/index/download.png" alt="Download" width="20" height="16">
+										  </a>	
+										  </div>
+										  <a href="files/Student_Contract.pdf" target="_blank">
+											  <button class="read-more1">Download</button>
+										  </a>
+										</div>
+										<div class="circle-button1">
+										  <div class="circle1">
+											<img src="images/index/copylink.png"   alt="Copy link 1" width="20" height="16" 
+											style="cursor:pointer;" 
+											data-link="https://docs.google.com/document/d/1rfDr_VFGiffSG6e9rTPfCf-bR-8x7x_340iRHCZXBIM/edit?tab=t.0"  
+											onclick="copyLink(this)">										
+										  </div>
+										  <button class="read-more1"   
+										  data-link="https://docs.google.com/document/d/1rfDr_VFGiffSG6e9rTPfCf-bR-8x7x_340iRHCZXBIM/edit?tab=t.0"
+										  onclick="copyLink(this)">Copy Link</button>	  
+										</div>
+									  </div>
+									</div>
+							  </div>
+
+							  <!-- Left Box -->
+							  <div class="box left">
+									<div class="content-wrap">
+									  <h1>Eotc Days Form</h1>
+									  <div class="button-row">
+										<div class="circle-button1">
+										  <div class="circle1">
+										  <a href="files/EOTC_Forms.pdf" target="_blank">
+											<img src="images/index/download.png" alt="Download" width="20" height="16">
+										  </a>	
+										  </div>
+											<a href="files/EOTC_Forms.pdf" target="_blank">
+											  <button class="read-more1">Download</button>
+											</a>
+										</div>
+										<div class="circle-button1">
+										  <div class="circle1">
+											<img src="images/index/copylink.png"   alt="Copy link 1" width="20" height="16" 
+											style="cursor:pointer;" 
+											data-link="https://forms.gle/NJfp9LWVi1LuXNNw7"
+											onclick="copyLink(this)">										
+										  </div>
+										  <button class="read-more1"   
+										  data-link="https://forms.gle/NJfp9LWVi1LuXNNw7"
+										  onclick="copyLink(this)">Copy Link</button>	  
+										</div>
+									  </div>
+									</div>
+							  </div>
+
+							  <!-- Right Box -->
+							<div class="box right">
+									<div class="content-wrap">
+									  <h1>Permission Slip</h1>
+									  <div class="button-row">
+										<div class="circle-button1">
+										  <div class="circle1">
+											  <a href="files/Permission_Form.pdf" target="_blank">
+												<img src="images/index/download.png" alt="Download" width="20" height="16">
+											  </a>
+										  </div>
+										  <a href="files/Permission_Form.pdf" target="_blank">
+											  <button class="read-more1">Download</button>
+										  </a>
+										</div>
+										<div class="circle-button1">
+										  <div class="circle1">
+											<img src="images/index/copylink.png"   alt="Copy link 1" width="20" height="16" 
+											style="cursor:pointer;" 
+											data-link="https://docs.google.com/document/d/1pqyO4xfTf9NCMpV7V0F1gDFut5_HdTUfer6F1NB6YTs/edit?tab=t.0#heading=h.gjdgxs" 
+											onclick="copyLink(this)">										
+										  </div>
+										  <button class="read-more1"   
+										  data-link="https://docs.google.com/document/d/1pqyO4xfTf9NCMpV7V0F1gDFut5_HdTUfer6F1NB6YTs/edit?tab=t.0#heading=h.gjdgxs"
+										  onclick="copyLink(this)">Copy Link</button>	  
+										</div>
+									  </div>
+									</div>
+							</div>
+					 </div>  
+					<img src="images/commons/border1.jpg" alt="" width="1520" height="40" class="bottom-border">				 
 				</div>	
-			</div>			 
-		</main>		
-		<!--my main content ends here-->
-	  </body>	
+				<div class="top-bg-wrapperind10">
+					<div class="wrapperind10_h1">
+						<h1>Discover</h1>
+					</div>
+						  
+					 <div class="stack">
+					  <div class="photo-wrap">
+						<img src="images/index/photo_c1.jpg" alt="Photo 1">
+					  </div>
+					  <div class="photo-wrap">
+						<img src="images/index/photo_c2.jpg" alt="Photo 2">
+					  </div>
+					  <div class="photo-wrap">
+						<img src="images/index/photo_c3.jpg" alt="Photo 3">
+					  </div>
+	  
+						<!-- Button OUTSIDE the photo-wraps -->
+						<nav class="menu1">
+						  <div  class="btn-text">
+								Want to explore what  <br>
+								outdoor activities <br>
+								we have to offer?</div>
+						  <div>    </div>   
+						  <button class="oval-btn">CLICK HERE!</button>
+						</nav>
+				  </div>	
+				  <img src="images/commons/border2.jpg" alt="" width="1920" height="20" class="bottom-border">       
+				</div>
+				
+			</main>	
+			
+			<!--my main content ends here-->
+			<script type="text/javascript" src="js/main.js"></script> 
+		</body>	
 		<!--footer code starts here-->
 		<footer>
 			<div class="footer">
-			  <p class="contact">Contact us</p>
-			  <div class="social">
-				<p>Follow us on</p>
-				<div class="social-icons">
-				  <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-					<i class="fab fa-facebook"></i>
-				  </a>
-				  <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-					<i class="fab fa-instagram"></i>
-				  </a>
-				  <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-					<i class="fab fa-twitter"></i>
-				  </a>
+				  <!-- LEFT SIDE -->
+				<div class="footer-left">
+					<h2>Contact</h2>
+
+					<div class="contact-item">
+					  <img src="images/commons/phone.jpg" alt="Mobile Icon" >
+					  <span>+64 4324 818</span>
+					</div>
+
+					<div class="contact-item">
+						<img src="images/commons/email.jpg" alt="Email Icon" >
+						<span>secetary@tawacollege.school.nz</span>
+					</div>
+
+					<div class="contact-item">
+						<img src="images/commons/map.jpg" alt="Map Icon" >
+						<span>Duncan Street, Tawa, <br>
+							  Wellington 5028</span>
+					</div>
 				</div>
-			  </div>
+				<div class="footer-center">
+				    <h1>Tawa College</h1>
+					<img src="images/commons/tawacollegeicon1.png" alt="Company Logo">
+					<h2>Copyright © Tawa College 2025 <br>
+                        All Rights Reserved </h2>
+				</div>
+
+				  <!-- RIGHT SIDE (SEPARATE DIV) -->
+				<div class="footer-right">
+				   <h1>FOLLOW US ON</h1>
+				   <div class="follow-item">
+				   <a href="https://www.facebook.com/TawaCollege/" target="_blank">
+					<img src="images/commons/facebook.jpg" alt="Facebook Icon" >
+				   </a>
+				   <a href="https://www.instagram.com/tawacol/" target="_blank">
+					<img src="images/commons/insta.jpg" alt="Insta Icon" >
+				   </a>
+				   <a href=" https://x.com/TawaCollege" target="_blank">
+					<img src="images/commons/x.jpg" alt="X Icon" >
+				   </a>
+				   </div>
+				   <h2><span><a href="https://www.tawacollege.school.nz/" target="_blank">Tawa College Website</a></span><br>					
+				   <span><a href="https://tawa.bridge.school.nz/" target="_blank">SchoolBridge</a></span></h2>	 
+				</div>
 			</div> 
 		</footer>
 		<!--footer code ends here-->
-	  </div>		
-</html>
+</html
